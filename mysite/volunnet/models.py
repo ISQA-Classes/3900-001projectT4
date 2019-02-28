@@ -10,12 +10,13 @@ TYPE_CHOICES = (
     ('Service Learning', 'Service Learning'),
     ('Assisting Developing Country', 'Assisting Developing Country'),
     ('Virtual', 'Virtual'),
+    ('Community', 'Community'),
     ('Environmental', 'Environmental'),
     ('Emergency Service', 'Emergency Service'),
     ('Educational', 'Educational'),
     ('Corporate', 'Corporate'),
-    ('Event', 'Event')
-    ('Social/Welfare', 'Social/Welfare')
+    ('Event', 'Event'),
+    ('Social/Welfare', 'Social/Welfare'),
 )
 
 
@@ -26,9 +27,7 @@ class Activity(models.Model):
     type = models.CharField(max_length=30, choices=TYPE_CHOICES)
     start_time = models.DateTimeField(default=timezone.now)
     end_time = models.DateTimeField(default=timezone.now)
-    date = models.DateTimeField(default=timezone.now)
-    created_date = models.DateTimeField(default=timezone.now)
-    published_date = models.DateTimeField(blank=True, null=True)
+    published_date = models.DateTimeField(default=timezone.now)
 
     def publish(self):
         self.published_date = timezone.now()
