@@ -1,7 +1,6 @@
 from django.conf import settings
 from django.db import models
 from django.utils import timezone
-import uuid
 
 
 # How to build models
@@ -21,7 +20,6 @@ TYPE_CHOICES = (
 
 
 class Activity(models.Model):
-    activityID = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=200)
     description = models.TextField()
     type = models.CharField(max_length=30, choices=TYPE_CHOICES)
