@@ -8,6 +8,7 @@ def activity_list(request):
     activity = Activity.objects.filter(published_date__lte=timezone.now())
     return render(request, 'volunnet/activity_list.html',
                  {'activities': activity})
+
 @login_required
 def register(request):
     if request.method == 'POST':
@@ -19,4 +20,4 @@ def register(request):
             return render(request, 'registration/register_done.html', {'user': user})
     else:
         form = UserRegistrationForm()
-    return render(request,'registration/register.html',{'form': form})
+    return render(request, 'registration/register.html', {'form': form})
