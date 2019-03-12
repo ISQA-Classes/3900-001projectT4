@@ -1,5 +1,4 @@
 
-
 {% block content %}
     {% if form.errors %}
     <br />
@@ -8,9 +7,10 @@
     <br />
     <br />
     <form method="post" action="{% url 'login' %}">
-         {{ form.as_p }}
+        {{ form.as_p }}
         {% csrf_token %}
         <input type="submit" value="login"/>
+        <button onclick=location.href="{% url 'password_reset' %}" type="button">Forgot Password</button></button>
         <input type="hidden" name="next" value="{{ next }}"/>
     </form>
 {% endblock %}
