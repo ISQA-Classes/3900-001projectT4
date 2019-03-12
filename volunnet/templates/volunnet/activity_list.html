@@ -1,10 +1,10 @@
+{% extends 'volunnet/base.html' %}
 {% block content %}
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Volunteer Services</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
     </head>
     <body>
     <style>
@@ -18,7 +18,7 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">Welcome!</div>
                     <div class="panel-body">
-                        Available activities for volunteers.
+                        List of current activities available for volunteers.
                     </div>
                 </div>
             </div>
@@ -61,11 +61,12 @@
             {% endfor %}
             </tbody>
         </table>
-     <div class="row">
-            <a href="" class="row"><span
+
+        <div class="row">
+            <a href="{% url 'volunnet:activity_new' %}" class="row"><span
                     class="btn btn-primary">Add Activity</span></a>
+            </div>
         </div>
-    </div>
     </body>
-    </html>
+</html>
 {% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'volunnet/base.html' %}
+
+{% block content %}
+
+    <h1>Add a New Activity</h1>
+    <form method="POST" class="activity-form">{% csrf_token %}
+          {{ form }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
