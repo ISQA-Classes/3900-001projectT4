@@ -59,6 +59,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
 
             <!-- Branding Image -->
@@ -72,6 +73,9 @@
                 <li><a href="{% url 'volunnet:activity_list' %}">Activities</a></li>
                 <li><a href="{% url 'volunnet:activity_list' %}">Volunteers</a></li>
                 <li><a href="{% url 'volunnet:activity_list' %}">Organizations</a></li>
+                <li><a href=""> </a></li>
+                <li><a href="{% url 'volunnet:register' %}">Register</a></li>
+
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -100,12 +104,14 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="thumbnail">
-                                <img src="{% static "images/customer.jpg" %}" alt="customer"/>
+                                <img src="{% static "images/activity.jpg" %}" alt="activity"/>
                                 <div class="caption">
-                                    <h2>Customer</h2>
+                                    <h2>Activity</h2>
                                     <p>Delighting customers and giving them a great dining experience is our main goal. </p>
                                     {% if user.is_authenticated %}
-
+                                        <p><a class="btn btn-default" href="{% url 'voluunet:activity_list' %}"
+                                              role="button">View
+                                            details &raquo;</a></p>
                                     {% endif %}
                                 </div>
                             </div>
