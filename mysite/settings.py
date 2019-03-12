@@ -119,5 +119,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/activity_list'
-LOGOUT_REDIRECT_URL = '/register'
+LOGOUT_REDIRECT_URL = '/login/'
+
+
+EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
