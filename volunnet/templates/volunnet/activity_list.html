@@ -1,3 +1,4 @@
+{% extends 'volunnet/base.html' %}
 {% block content %}
 <html>
     <head>
@@ -62,7 +63,7 @@
             </tbody>
         </table>
      <div class="row">
-            <a href="" class="row"><span
+            <a href="{% url 'volunnet:activity_new' %}" class="row"><span
                     class="btn btn-primary">Add Activity</span></a>
         </div>
     </div>
