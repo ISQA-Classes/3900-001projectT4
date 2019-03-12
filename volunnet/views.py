@@ -3,12 +3,12 @@ from .models import *
 from .forms import *
 from django.contrib.auth.decorators import login_required
 
-
+@login_required
 def activity_list(request):
     activity = Activity.objects.filter(published_date__lte=timezone.now())
     return render(request, 'volunnet/activity_list.html',
                  {'activities': activity})
-@login_required
+
 def register(request):
     if request.method == 'POST':
         form = UserRegistrationForm(request.POST)
