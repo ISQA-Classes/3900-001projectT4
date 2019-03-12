@@ -4,7 +4,6 @@ from django.urls import path, re_path
 
 app_name = 'volunnet'
 urlpatterns = [
-<<<<<<< HEAD
 
     path('', views.home, name='home'),
     re_path(r'^home/$', views.home, name='home'),
@@ -13,9 +12,9 @@ urlpatterns = [
     path('activity_new', views.activity_new, name='activity_new'),
 
     path('register/', views.register, name='register'),
-=======
+
     path('activity_list', views.activity_list, name='activity_list'),
     path('register', views.register, name='register'),
->>>>>>> origin/master
+
 
 ]

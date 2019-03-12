@@ -17,7 +17,6 @@ def activity_list(request):
     return render(request, 'volunnet/activity_list.html',
                  {'activities': activity})
 
-<<<<<<< HEAD
 @login_required
 def activity_new(request):
    if request.method == "POST":
@@ -33,12 +32,9 @@ def activity_new(request):
        # print("Else")
    return render(request, 'volunnet/activity_new.html', {'form': form})
 
-=======
-<<<<<<< HEAD
+
 @login_required
-=======
->>>>>>> 3671282134de46c350befa6cba2bb729b4ecf927
->>>>>>> origin/master
+
 def register(request):
     if request.method == 'POST':
         form = UserRegistrationForm(request.POST)

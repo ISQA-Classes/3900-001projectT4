@@ -8,10 +8,7 @@ class ActivityForm(forms.ModelForm):
         model = Activity
         fields = ('title', 'description', 'type', 'start_time', 'end_time', 'published_date')
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 class UserRegistrationForm(forms.ModelForm):
     password = forms.CharField(label='Password', widget=forms.PasswordInput)
     password2 = forms.CharField(label='Re-enter password', widget=forms.PasswordInput)
