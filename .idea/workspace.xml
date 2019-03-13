@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="003a37fc-9f36-4245-ba44-8bcdc6c2cfe2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunnet/templates/volunnet/activity_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/volunnet/templates/volunnet/activity_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunnet/templates/volunnet/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/volunnet/templates/volunnet/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunnet/templates/volunnet/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/volunnet/templates/volunnet/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunnet/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunnet/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="003a37fc-9f36-4245-ba44-8bcdc6c2cfe2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,20 +12,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/volunnet/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -198,16 +179,15 @@
       <workItem from="1552371230957" duration="874000" />
       <workItem from="1552378947082" duration="1125000" />
       <workItem from="1552381881894" duration="5554000" />
-      <workItem from="1552408898939" duration="3037000" />
+      <workItem from="1552408898939" duration="3625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12556000" />
+    <option name="totallyTimeSpent" value="13144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="808" y="52" width="723" height="657" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3529412" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
