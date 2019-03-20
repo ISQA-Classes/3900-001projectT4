@@ -9,12 +9,12 @@
     <body>
     <style>
         body {
-            background-color: beige;
+            background-color: lightcyan;
         }
     </style>
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-10 col-md-offset-0">
                 <div class="panel panel-primary">
                     <div class="panel-heading">Welcome!</div>
                     <div class="panel-body">
@@ -28,10 +28,15 @@
         <h2 style="padding-left: 15Px">Activities</h2>
     </div>
     <div>
+        <style>
+        table {
+            background-color: palegreen;
+        }
+        </style>
         <table class="table table-striped table-bordered table-hover">
             <thead>
             <tr class="bg-info">
-                <th>Title</th>
+                <th>Title </th>
                 <th>Description</th>
                 <th>Type</th>
                 <th>Start Time</th>
@@ -50,10 +55,11 @@
                     <td>{{ activity.start_time }}</td>
                     <td>{{ activity.end_time }}</td>
                     <td>{{ activity.published_date }}</td>
-                      <td><a href=""
+
+                      <td><a href="{% url 'volunnet:activity_edit' pk=activity.pk %}"
                            class="btn btn-warning">Edit</a></td>
 
-                    <td><a href=""
+                    <td><a href="{% url 'volunnet:activity_delete' pk=activity.pk %}"
                            onclick="return confirm('Are you sure you want to delete?')"
                            class="btn btn-danger">Delete</a>
                     </td>
