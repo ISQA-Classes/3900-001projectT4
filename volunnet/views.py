@@ -27,12 +27,36 @@ def activity_new(request):
            activity.published_date = timezone.now()
            activity.save()
            activity = Activity.objects.filter(published_date__lte=timezone.now())
-           return render(request, 'volunnet/activity_list.html',{'activities': activity})
+           return render(request, 'volunnet/activity_list.html',
+                         {'activities': activity})
    else:
        form = ActivityForm()
        # print("Else")
    return render(request, 'volunnet/activity_new.html', {'form': form})
 
+@login_required
+def activity_edit(request, pk):
+   activity = get_object_or_404(Activity, pk=pk)
+   if request.method == "POST":
+       # update
+       form = ActivityForm(request.POST, instance=activity)
+       if form.is_valid():
+           activity = form.save(commit=False)
+           activity.updated_date = timezone.now()
+           activity.save()
+           activity = Activity.objects.filter(published_date__lte=timezone.now())
+           return render(request, 'volunnet/activity_list.html',
+                         {'activities': activity})
+   else:
+        # edit
+       form = ActivityForm(instance=activity)
+   return render(request, 'volunnet/activity_edit.html', {'form': form})
+
+@login_required
+def activity_delete(request, pk):
+   activity = get_object_or_404(Activity, pk=pk)
+   activity.delete()
+   return redirect('volunnet:activity_list')
 
 def register(request):
     if request.method == 'POST':
