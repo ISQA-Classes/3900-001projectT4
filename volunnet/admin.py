@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Activity
+from .models import Activity, Profile
 
 
 class ActivityList(admin.ModelAdmin):
@@ -11,3 +11,4 @@ class ActivityList(admin.ModelAdmin):
 
 # Register your models here.
 admin.site.register(Activity)
+admin.site.register(Profile)

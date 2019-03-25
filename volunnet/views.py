@@ -4,6 +4,7 @@ from .forms import *
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404
 from django.shortcuts import redirect
+from .forms import UserRegistrationForm
 
 
 now = timezone.now()
@@ -58,6 +59,7 @@ def activity_delete(request, pk):
    activity.delete()
    return redirect('volunnet:activity_list')
 
+
 def register(request):
     if request.method == 'POST':
         form = UserRegistrationForm(request.POST)
@@ -69,3 +71,8 @@ def register(request):
     else:
         form = UserRegistrationForm()
     return render(request, 'registration/register.html', {'form': form})
+
+
+@login_required
+def profile(request):
+    return render(request, 'registration/profile.html')

@@ -3,6 +3,7 @@ from .models import Activity
 from django.contrib.auth.models import User
 
 
+
 class ActivityForm(forms.ModelForm):
     class Meta:
         model = Activity
