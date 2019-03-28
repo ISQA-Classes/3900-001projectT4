@@ -3,7 +3,6 @@ from .models import Activity
 from django.contrib.auth.models import User
 
 
-
 class ActivityForm(forms.ModelForm):
     class Meta:
         model = Activity
@@ -17,3 +16,4 @@ class UserRegistrationForm(forms.ModelForm):
     class Meta:
         model = User
         fields = ('username', 'first_name', 'last_name', 'email')
+

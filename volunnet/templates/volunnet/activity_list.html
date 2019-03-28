@@ -56,13 +56,15 @@
                     <td>{{ activity.end_time }}</td>
                     <td>{{ activity.published_date }}</td>
 
-                      <td><a href="{% url 'volunnet:activity_edit' pk=activity.pk %}"
+                    <td><a href="{% url 'volunnet:activity_edit' pk=activity.pk %}"
                            class="btn btn-warning">Edit</a></td>
 
                     <td><a href="{% url 'volunnet:activity_delete' pk=activity.pk %}"
                            onclick="return confirm('Are you sure you want to delete?')"
-                           class="btn btn-danger">Delete</a>
-                    </td>
+                           class="btn btn-danger">Delete</a></td>
+
+                    <td><a href=""
+                           class="btn btn-primary">Apply</a></td>
                 </tr>
             {% endfor %}
             </tbody>
