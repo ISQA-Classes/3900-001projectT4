@@ -75,7 +75,7 @@
                 <li><a href="{% url 'volunnet:activity_list' %}">Organizations</a></li>
                 <li><a> </a></li>
                 <li><a> </a></li>
-                <li><a href="{% url 'volunnet:register' %}">Sign-up</a></li>
+                <li><a href="{% url 'volunnet:signupas' %}">Sign-up</a></li>
 
 
             </ul>
@@ -86,11 +86,11 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="{% url 'logout' %}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                            <li><a href="{% url 'volunnet:logout' %}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                         </ul>
                     </li>
                 {% else %}
-                    <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="{% url 'volunnet:user_login' %}"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
                 {% endif %}
             </ul>
         </div>

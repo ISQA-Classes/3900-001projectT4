@@ -27,6 +27,16 @@ class Profile(models.Model):
     def __str__(self):
         return f'{self.user.username} Profile'
 
+class Organization(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    name = models.CharField(max_length=150)
+    address = models.CharField(max_length=500)
+    city = models.CharField(max_length=50, default = 'Omaha')
+    state = models.CharField(max_length=2, default = 'NE')
+    phone = models.IntegerField(default=1234567890)
+    zipcode = models.IntegerField(default=68106)
+    email = models.EmailField(blank=True)
+
 
 class Activity(models.Model):
     title = models.CharField(max_length=200)
@@ -42,4 +52,3 @@ class Activity(models.Model):
 
     def __str__(self):
         return self.title
-

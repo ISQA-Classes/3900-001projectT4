@@ -31,13 +31,14 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'volunnet',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'volunnet',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -126,7 +127,7 @@ MEDIA_URL = '/media/'
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/login/'
+LOGOUT_REDIRECT_URL = '/home'
 
 
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"

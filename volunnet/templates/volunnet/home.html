@@ -12,7 +12,12 @@
 
                 <div class="page-container">
 
-                    <h2 class="top-menu">Hello {{ user.username }},</h2>
+
+                    {% if amIorg %}
+                      <h2 class="top-menu">Hello {{ user.username }}, good to see a Organizer!</h2>
+                    {% else %}
+                      <h2 class="top-menu">Hello {{ user.username }}, good to see a Volunteer!</h2>
+                    {% endif %}
                     <h4>Volunteer Network is a network where volunteers/ students can look for the different
                         types of volunteer activities to have real world experiences. Volunteer seekers can
                         register here and signup for the activites and hours they want to do.</h4>

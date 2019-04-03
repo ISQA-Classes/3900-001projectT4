@@ -1,3 +1,5 @@
+{% extends 'volunnet/base.html' %}
+{% load staticfiles %}
 
 {% block content %}
     {% if form.errors %}
@@ -6,17 +8,11 @@
     {% endif %}
     <br />
     <br />
-    <form method="post" action="{% url 'login' %}">
+    <form method="post" action="{% url 'volunnet:user_login' %}">
         {{ form.as_p }}
         {% csrf_token %}
         <input type="submit" value="login"/>
-        <button onclick=location.href="{% url 'password_reset' %}" type="button">Forgot Password</button></button>
+        <button onclick=location.href="{% url "password_reset" %}" type="button">Forgot Password</button></button>
         <input type="hidden" name="next" value="{{ next }}"/>
     </form>
 {% endblock %}
-
-    <style>
-        body {
-            background-color: lightcyan;
-        }
-    </style>
