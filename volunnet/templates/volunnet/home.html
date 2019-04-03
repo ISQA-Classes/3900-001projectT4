@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+   <body>
+   <style>
+        body {
+            background-color: skyblue;
+        }
+    </style>
+    <html>
+
+                <div class="page-container">
+
+
+                    {% if amIorg %}
+                      <h2 class="top-menu">Hello {{ user.username }}, good to see a Organizer!</h2>
+                    {% else %}
+                      <h2 class="top-menu">Hello {{ user.username }}, good to see a Volunteer!</h2>
+                    {% endif %}
+                    <h4>Volunteer Network is a network where volunteers/ students can look for the different
+                        types of volunteer activities to have real world experiences. Volunteer seekers can
+                        register here and signup for the activites and hours they want to do.</h4>
+
+                    <h4>It also allows organizations to sign up and post their volunteer activities and have
+                        access to a pool of willing volunteers looking to offer help.</h4>
+                    <br>
+
+                </div>
+
+            <div class="content container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="links">
+
+                            <!-- Example row of columns -->
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img src="{% static "images/activity.jpg" %}" alt="activity"/>
+                                        <div class="caption">
+                                            <h2>Activities</h2>
+                                            <p>List of the current activities with descriptions.</p>
+                                            <p><a class="btn btn-primary" href="{% url 'volunnet:activity_list' %}"
+                                                  role="button">View
+                                                details &raquo;</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img src="{% static "images/volunteer.jpeg" %}" alt="volunteer"/>
+                                        <div class="caption">
+                                            <h2>Volunteers</h2>
+                                            <p>Volunteers can signup here.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img src="{% static "images/organization.jpeg" %}" alt="organization"/>
+                                        <div class="caption">
+                                            <h2>Organizations</h2>
+                                            <p>Activity providers can signup here.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+    </html>
+{% endblock %}
