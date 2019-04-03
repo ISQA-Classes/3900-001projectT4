@@ -93,8 +93,10 @@ def register(request):
         form = UserRegistrationForm()
     return render(request, 'registration/register.html', {'form': form})
 
+
 def signupas(request):
     return render(request, 'registration/signupas.html')
+
 
 def OrganizationRegister(request):
     print("Running")
@@ -114,7 +116,7 @@ def OrganizationRegister(request):
 
 def user_login(request):
     if request.method == 'POST':
-        form =  LoginForm(request.POST)
+        form = LoginForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
             user = authenticate(username=cd['username'],password=cd['password'])

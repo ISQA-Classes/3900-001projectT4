@@ -25,7 +25,7 @@ class OrganizationRegistrationForm(forms.ModelForm):
 
     class Meta:
         model = Organization
-        fields = ('name', 'address', 'state','city','zipcode','email', 'phone')
+        fields = ('name', 'address', 'state','city', 'zipcode', 'email', 'phone')
 
 
 class LoginForm(forms.Form):
