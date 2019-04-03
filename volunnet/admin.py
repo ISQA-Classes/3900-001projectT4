@@ -8,8 +8,10 @@ class ActivityList(admin.ModelAdmin):
     search_fields = ('title', 'type')
     ordering = ['type']
 
+
 class OrganizationAdmin(admin.ModelAdmin):
-    list_display = ['user', 'name','address', 'city', 'state', 'phone', 'zipcode', 'email']
+    list_display = ['user', 'name', 'address', 'city', 'state', 'phone', 'zipcode', 'email']
+
 
 # Register your models here.
 admin.site.register(Activity)

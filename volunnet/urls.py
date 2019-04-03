@@ -17,7 +17,6 @@ urlpatterns = [
     path('register/', views.register, name='register'),
     path('activity_list', views.activity_list, name='activity_list'),
     path('register', views.register, name='register'),
-    path('profile', views.profile, name='profile'),
     path('signupas', views.signupas, name='signupas'),
     path('OrganizationRegistration/', views.OrganizationRegister, name='OrganizationRegister')
 ]
