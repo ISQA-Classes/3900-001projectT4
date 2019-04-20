@@ -5,6 +5,9 @@
     <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="tests" />
+    <orderEntry type="module" module-name="dgb" />
+    <orderEntry type="module" module-name="3900s25" />
+    <orderEntry type="module" module-name="mfscrm" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_FOLDERS">

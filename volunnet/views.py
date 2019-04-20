@@ -9,6 +9,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import HttpResponseRedirect
 
+
 def logoutUser(request):
    logout(request)
    return HttpResponseRedirect('/home/')
@@ -136,3 +137,27 @@ def user_login(request):
 @login_required
 def profile(request):
     return render(request, 'registration/profile.html')
+
+#added by amber
+def vol_list(request):
+    global organizer
+    print("The current value is:", organizer)
+    volunteer = Volunteer.objects.filter(applied_time__lte=timezone.now())
+    return render(request, 'volunnet/vol_list.html',
+                  {'volunteers': volunteer})
+
+@login_required
+def apply(request):
+    if request.method == 'POST':
+        form = VolunteerForm(request.POST)
+        if form.is_valid():
+            volunteer = form.save(commit=False)
+            volunteer.applied_time = timezone.now()
+            volunteer.save()
+            volunteer = Volunteer.objects.filter(applied_time__lte=timezone.now())
+            return render(request, 'volunnet/vol_list.html',{'volunteers': volunteer})
+
+    else:
+        form = VolunteerForm()
+        # print("Else")
+    return render(request, 'volunnet/apply.html', {'form': form})

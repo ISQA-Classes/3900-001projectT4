@@ -39,29 +39,30 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="thumbnail">
-                                    <img src="{% static 'images/volunteers.jpg' %}" alt="volunteer"/>
-                                    <div class="caption">
-                                        <h2>Volunteers</h2>
-                                        <p>Volunteers can signup here.</p>
-                                        <p><a class="btn btn-primary" href="{% url 'volunnet:register' %}"
-                                              role="button">Sign-Up</a></p>
+                            {% if not user.is_authenticated %}
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img src="{% static 'images/volunteers.jpg' %}" alt="volunteer"/>
+                                        <div class="caption">
+                                            <h2>Volunteers</h2>
+                                            <p>Volunteers can signup here.</p>
+                                            <p><a class="btn btn-primary" href="{% url 'volunnet:register' %}"
+                                                  role="button">Sign-Up</a></p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="thumbnail">
-                                    <img src="{% static 'images/organization.jpeg' %}" alt="organization"/>
-                                    <div class="caption">
-                                        <h2>Organizations</h2>
-                                        <p>Activity providers can signup here.</p>
-                                        <p><a class="btn btn-primary" href="{% url 'volunnet:OrganizationRegister' %}"
-                                              role="button">Sign-Up</a></p>
+                                <div class="col-md-3">
+                                    <div class="thumbnail">
+                                        <img src="{% static 'images/organization.jpeg' %}" alt="organization"/>
+                                        <div class="caption">
+                                            <h2>Organizations</h2>
+                                            <p>Activity providers can signup here.</p>
+                                            <p><a class="btn btn-primary" href="{% url 'volunnet:OrganizationRegister' %}"
+                                                  role="button">Sign-Up</a></p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            {% endif %}
                         </div>
                     </div>
                 </div>

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../WebApplications/3900s25/.idea/3900s25.iml" filepath="$PROJECT_DIR$/../WebApplications/3900s25/.idea/3900s25.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/VolunteerNetVMA.iml" filepath="$PROJECT_DIR$/.idea/VolunteerNetVMA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dgb/.idea/dgb.iml" filepath="$PROJECT_DIR$/../dgb/.idea/dgb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MavFoodService/mfscrm/.idea/mfscrm.iml" filepath="$PROJECT_DIR$/../MavFoodService/mfscrm/.idea/mfscrm.iml" />
       <module fileurl="file://$PROJECT_DIR$/../dgb/mysite/tests/.idea/tests.iml" filepath="$PROJECT_DIR$/../dgb/mysite/tests/.idea/tests.iml" />
     </modules>
   </component>

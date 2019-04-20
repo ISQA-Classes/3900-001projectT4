@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block content %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Volunteer Services</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    </head>
+    <body>
+    <style>
+        body {
+            background-color: lightcyan;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-0">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Welcome!</div>
+                    <div class="panel-body">
+                        List of volunteers applied for this activity
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <h2 style="padding-left: 15Px">Volunteers</h2>
+    </div>
+    <div>
+        <style>
+        table {
+            background-color: palegreen;
+        }
+        </style>
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+            <tr class="bg-info">
+                <th>Activity title </th>
+                <th>Name </th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Date</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Applied Time</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            {% for volunteer in volunteers %}
+                <tr>
+                    <td>{{ volunteer.title}}</td>
+                    <td>{{ volunteer.vol_name }}</td>
+                    <td>{{ volunteer.email }}</td>
+                    <td>{{ volunteer.phone_number }}</td>
+                    <td>{{ volunteer.vol_date }}</td>
+                    <td>{{ volunteer.start_time }}</td>
+                    <td>{{ volunteer.end_time }}</td>
+                    <td>{{ volunteer.applied_time }}</td>
+
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        </div>
+    </body>
+</html>
+{% endblock %}

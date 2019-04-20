@@ -7,9 +7,7 @@ from selenium.webdriver.support.ui import Select
 
 class AddActivityAdminATS(unittest.TestCase):
     def setUp(self):
-        # In order for it all to work, the path of the chromedriver must be declared. In this situation,
-        # my chromedriver is located in a virtual environment located on the desktop.
-        self.driver = webdriver.Chrome("/Users/brandonlai/Desktop/venv/bin/chromedriver")
+        self.driver = webdriver.Chrome()
 
     def test_blog(self):
         user = "instructor"

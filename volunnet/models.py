@@ -28,7 +28,6 @@ class Profile(models.Model):
         return f'{self.user.username} Profile'
 
 
-# Secondary Key to link
 class Organization(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=150)
@@ -40,8 +39,6 @@ class Organization(models.Model):
     email = models.EmailField(blank=True)
 
 
-# Secondary Key to link
-# Add number of users applied (do this first)
 class Activity(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
@@ -57,5 +54,20 @@ class Activity(models.Model):
     def __str__(self):
         return self.title
 
-# Link Activity with applied users
-# Create a signup/register table
+#added by amber
+class Volunteer(models.Model):
+    title = models.CharField(max_length=200, default="")
+    vol_name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=100)
+    phone_number = models.CharField(max_length=50)
+    vol_date = models.DateTimeField(default=timezone.now)
+    start_time = models.DateTimeField(default=timezone.now)
+    end_time = models.DateTimeField(default=timezone.now)
+    applied_time = models.DateTimeField(default=timezone.now)
+
+    def publish(self):
+        self.applied_time = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.vol_name
