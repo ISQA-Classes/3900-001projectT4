@@ -70,4 +70,8 @@ class Volunteer(models.Model):
         self.save()
 
     def __str__(self):
+<<<<<<< HEAD
         return self.vol_name
+=======
+        return self.vol_name
+>>>>>>> 0f6f5bda6524f40979d57fa967029a224ba1044d

@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+<<<<<<< HEAD
     <mapping directory="$PROJECT_DIR$/../MavFoodService/mfscrm" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/tests" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../WebApplications/3900s25" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../dgb" vcs="Git" />
+=======
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+>>>>>>> 0f6f5bda6524f40979d57fa967029a224ba1044d
   </component>
 </project>
