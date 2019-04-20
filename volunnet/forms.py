@@ -1,5 +1,5 @@
 from django import forms
-from .models import Activity, Organization
+from .models import Activity, Organization, Volunteer
 from django.contrib.auth.models import User
 
 
@@ -31,3 +31,9 @@ class OrganizationRegistrationForm(forms.ModelForm):
 class LoginForm(forms.Form):
     username = forms.CharField()
     password = forms.CharField(widget=forms.PasswordInput)
+
+#added by amber
+class VolunteerForm(forms.ModelForm):
+    class Meta:
+        model = Volunteer
+        fields = ('title','vol_name', 'email', 'phone_number','vol_date', 'start_time', 'end_time','applied_time' )

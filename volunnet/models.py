@@ -53,3 +53,21 @@ class Activity(models.Model):
 
     def __str__(self):
         return self.title
+
+#added by amber
+class Volunteer(models.Model):
+    title = models.CharField(max_length=200, default="")
+    vol_name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=100)
+    phone_number = models.CharField(max_length=50)
+    vol_date = models.DateTimeField(default=timezone.now)
+    start_time = models.DateTimeField(default=timezone.now)
+    end_time = models.DateTimeField(default=timezone.now)
+    applied_time = models.DateTimeField(default=timezone.now)
+
+    def publish(self):
+        self.applied_time = timezone.now()
+        self.save()
+
+    def __str__(self):
+        return self.vol_name

@@ -39,7 +39,7 @@
                 <th>End Time</th>
                 <th>Date Published</th>
 
-                <th colspan="3">Actions</th>
+                <th colspan="4">Actions</th>
             </tr>
             </thead>
             <tbody>
@@ -59,8 +59,11 @@
                            onclick="return confirm('Are you sure you want to delete?')"
                            class="btn btn-danger">Delete</a></td>
 
-                    <td><a href=""
-                           class="btn btn-primary">Apply</a></td>
+                    <td><a href="{% url 'volunnet:apply' %}"
+                            class="btn btn-primary">Apply</a></td>
+
+                    <td><a href="{% url 'volunnet:vol_list'%}"
+                           class="btn btn-primary">View list</a></td>
                 </tr>
             {% endfor %}
             </tbody>
