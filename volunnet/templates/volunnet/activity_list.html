@@ -24,6 +24,10 @@
         <h2 style="padding-left: 15Px">Activities</h2>
     </div>
     <div>
+         <form method="get">
+    {{ filter.form.as_p }}
+    <button type="submit">Search</button>
+         </form>
         <style>
         table {
             background-color: palegreen;
@@ -43,7 +47,7 @@
             </tr>
             </thead>
             <tbody>
-            {% for activity in activities %}
+            {% for activity in filter.qs %}
                 <tr>
                     <td>{{ activity.title }}</td>
                     <td>{{ activity.description }}</td>
