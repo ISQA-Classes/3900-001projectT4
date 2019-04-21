@@ -8,6 +8,7 @@ from .forms import UserRegistrationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import HttpResponseRedirect
+from .forms import ActiivtyFilter
 
 
 def logoutUser(request):
@@ -138,6 +139,7 @@ def user_login(request):
 def profile(request):
     return render(request, 'registration/profile.html')
 
+@login_required
 #added by amber
 def vol_list(request):
     global organizer
@@ -161,3 +163,11 @@ def apply(request):
         form = VolunteerForm()
         # print("Else")
     return render(request, 'volunnet/apply.html', {'form': form})
+
+
+#Search filter CV
+def search(request):
+    activity_list = Activity.objects.all()
+    activity_filter = ActiivtyFilter(request.GET, queryset=activity_list)
+    return render(request, 'volunnet/volunteer_list.html', {'filter': activity_filter})
+

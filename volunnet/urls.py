@@ -22,4 +22,7 @@ urlpatterns = [
 
     path('vol_list', views.vol_list, name='vol_list'),
     path('apply/', views.apply, name='apply'),
+    #added by CV
+    path('volunteer_list', views.search, name='volunteer_list'),
+
 ]
