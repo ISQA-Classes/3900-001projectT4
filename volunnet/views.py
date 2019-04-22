@@ -181,4 +181,5 @@ def search(request):
     activity_list = Activity.objects.all()
     activity_filter = ActiivtyFilter(request.GET, queryset=activity_list)
     return render(request, 'volunnet/volunteer_list.html', {'filter': activity_filter})
+    return render(request, 'volunnet/activity_list.html', {'filter': activity_filter})
 

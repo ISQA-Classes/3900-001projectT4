@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f25cf718-cb27-45de-a38d-72ce35ea8412" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunnet/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunnet/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunnet/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunnet/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/volunnet/templates/registration/password_reset_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/volunnet/templates/registration/password_reset_subject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/VolunteerNetVMA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VolunteerNetVMA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunnet/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/volunnet/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunnet/templates/registration/password_reset_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/volunnet/templates/registration/password_reset_complete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunnet/templates/registration/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/volunnet/templates/registration/password_reset_confirm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/volunnet/templates/registration/password_reset_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/volunnet/templates/registration/password_reset_done.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volunnet/templates/registration/password_reset_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/volunnet/templates/registration/password_reset_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/volunnet/templates/volunnet/activity_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/volunnet/templates/volunnet/activity_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volunnet/templates/volunnet/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/volunnet/templates/volunnet/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/volunnet/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunnet/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/volunnet/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/volunnet/views.py" afterDir="false" />
     </list>
@@ -30,51 +33,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunnet/templates/volunnet/home.html">
+        <entry file="file://$PROJECT_DIR$/volunnet/templates/volunnet/activity_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="1245">
+              <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunnet/templates/volunnet/activity_new.html">
+        <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/password_reset_complete.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunnet/templates/volunnet/activity_list.html">
+        <entry file="file://$PROJECT_DIR$/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="54" selection-start-line="54" selection-end-line="55" />
+            <state relative-caret-position="-1129">
+              <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="44" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="44" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/register_done.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/password_reset_confirm.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/volunnet/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1242">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="2655">
+              <caret line="177" selection-start-line="177" selection-end-line="177" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -83,12 +78,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/profile.html">
+        <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/password_reset_done.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            <state relative-caret-position="210">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/password_reset_email.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/password_reset_form.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/password_reset_subject">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -130,9 +140,10 @@
         <option value="$PROJECT_DIR$/volunnet/templates/base.html" />
         <option value="$PROJECT_DIR$/volunnet/models.py" />
         <option value="$PROJECT_DIR$/volunnet/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/volunnet/templates/volunnet/home.html" />
+        <option value="$PROJECT_DIR$/volunnet/templates/registration/password_reset_done.html" />
         <option value="$PROJECT_DIR$/volunnet/templates/volunnet/activity_list.html" />
         <option value="$PROJECT_DIR$/volunnet/views.py" />
-        <option value="$PROJECT_DIR$/volunnet/templates/volunnet/home.html" />
       </list>
     </option>
   </component>
@@ -202,7 +213,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -328,7 +339,7 @@
       <workItem from="1554873188545" duration="685000" />
       <workItem from="1554938674786" duration="18794000" />
       <workItem from="1555788451906" duration="6819000" />
-      <workItem from="1555887066079" duration="2222000" />
+      <workItem from="1555887066079" duration="2639000" />
     </task>
     <servers />
   </component>
@@ -365,7 +376,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42093000" />
+    <option name="totallyTimeSpent" value="42510000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="23" width="1243" height="777" extended-state="0" />
@@ -420,30 +431,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/media/profile_pics/current.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_addactivity_admin.py" />
-    <entry file="file://$PROJECT_DIR$/../dgb/mysite/tests/seltest1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../dgb/mysite/tests/seltest2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="24" column="79" selection-start-line="24" selection-start-column="79" selection-end-line="24" selection-end-column="79" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/media/default.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -482,19 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/password_reset_confirm.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/password_reset_complete.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -539,9 +513,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/signupas.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/register_done.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../MavFoodService/mfscrm/crm/forms.py">
@@ -636,13 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volunnet/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="110" column="58" lean-forward="true" selection-start-line="110" selection-start-column="58" selection-end-line="110" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/volunnet/templates/volunnet/activity_new.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -663,7 +627,7 @@
     <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -674,17 +638,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volunnet/templates/volunnet/activity_list.html">
+    <entry file="file://$PROJECT_DIR$/volunnet/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="54" selection-start-line="54" selection-end-line="55" />
+        <state relative-caret-position="68">
+          <caret line="110" column="58" lean-forward="true" selection-start-line="110" selection-start-column="58" selection-end-line="110" selection-end-column="58" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/volunnet/templates/volunnet/activity_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/password_reset_subject">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/password_reset_form.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/password_reset_email.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/password_reset_done.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/password_reset_confirm.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/password_reset_complete.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1129">
+          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volunnet/templates/registration/register_done.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/volunnet/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1242">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="2655">
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
