@@ -25,15 +25,12 @@ urlpatterns = [
     path('vol_list', views.vol_list, name='vol_list'),
     path('apply/', views.apply, name='apply'),
     #added by CV
-<<<<<<< HEAD
     path('volunteer_list', views.search, name='volunteer_list'),
 
-=======
     #path('volunteer_list', views.search, name='volunteer_list'),
     url(r'^password_reset/$', auth_views.password_reset, name='password_reset'),
     url(r'^password_reset/done/$', auth_views.password_reset_done, name='password_reset_done'),
     url(r'^reset/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
         auth_views.password_reset_confirm, name='password_reset_confirm'),
     url(r'^reset/done/$', auth_views.password_reset_complete, name='password_reset_complete'),
->>>>>>> 8d694cea8f00b6d82fce10575e90992129885b3e
 ]

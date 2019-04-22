@@ -27,6 +27,7 @@
          <form method="get">
     {{ filter.form.as_p }}
     <button type="submit">Search</button>
+    <button onclick=location.href="{% url "volunnet:activity_list" %}" type="button">Clear</button></button>
          </form>
         <style>
         table {
