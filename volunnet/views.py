@@ -8,13 +8,16 @@ from .forms import UserRegistrationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import HttpResponseRedirect
+from .forms import ActiivtyFilter
 
 
 def logoutUser(request):
    logout(request)
    return HttpResponseRedirect('/home/')
 
+
 organizer = True
+
 
 def whoAmI(current_user):
     global organizer
@@ -27,18 +30,23 @@ def whoAmI(current_user):
         organizer = False
         return False
 
+
 now = timezone.now()
+
+
 def home(request):
    return render(request, 'volunnet/home.html',
                  {'volunnet': home})
 
 
+@login_required
 def activity_list(request):
     global organizer
     print("The current value is:", organizer)
     activity = Activity.objects.filter(published_date__lte=timezone.now())
     return render(request, 'volunnet/activity_list.html',
-                 {'activities': activity})
+                 {'activities': activity,
+                  'amIorg': whoAmI(request.user)})
 
 
 @login_required
@@ -57,6 +65,7 @@ def activity_new(request):
        # print("Else")
    return render(request, 'volunnet/activity_new.html', {'form': form})
 
+
 @login_required
 def activity_edit(request, pk):
    activity = get_object_or_404(Activity, pk=pk)
@@ -74,6 +83,7 @@ def activity_edit(request, pk):
         # edit
        form = ActivityForm(instance=activity)
    return render(request, 'volunnet/activity_edit.html', {'form': form})
+
 
 @login_required
 def activity_delete(request, pk):
@@ -138,6 +148,8 @@ def user_login(request):
 def profile(request):
     return render(request, 'registration/profile.html')
 
+
+@login_required
 #added by amber
 def vol_list(request):
     global organizer
@@ -145,6 +157,7 @@ def vol_list(request):
     volunteer = Volunteer.objects.filter(applied_time__lte=timezone.now())
     return render(request, 'volunnet/vol_list.html',
                   {'volunteers': volunteer})
+
 
 @login_required
 def apply(request):
@@ -161,3 +174,11 @@ def apply(request):
         form = VolunteerForm()
         # print("Else")
     return render(request, 'volunnet/apply.html', {'form': form})
+
+
+#Search filter CV
+def search(request):
+    activity_list = Activity.objects.all()
+    activity_filter = ActiivtyFilter(request.GET, queryset=activity_list)
+    return render(request, 'volunnet/volunteer_list.html', {'filter': activity_filter})
+

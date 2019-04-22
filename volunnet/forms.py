@@ -3,6 +3,11 @@ from .models import Activity, Organization, Volunteer
 from django.contrib.auth.models import User
 
 
+#added by CV
+from django.db import models
+import django_filters
+
+
 class ActivityForm(forms.ModelForm):
     class Meta:
         model = Activity
@@ -37,3 +42,13 @@ class VolunteerForm(forms.ModelForm):
     class Meta:
         model = Volunteer
         fields = ('title','vol_name', 'email', 'phone_number','vol_date', 'start_time', 'end_time','applied_time' )
+
+#added by CV
+class ActiivtyFilter(django_filters.FilterSet):
+    title = django_filters.CharFilter(lookup_expr='icontains')
+    description = django_filters.CharFilter(lookup_expr='icontains')
+    type = models.ForeignKey(Activity, on_delete=models.SET_NULL, null=True)
+
+    class Meta:
+        model = Activity
+        fields = ['title', 'description', 'type']
