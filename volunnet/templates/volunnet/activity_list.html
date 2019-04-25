@@ -24,11 +24,6 @@
         <h2 style="padding-left: 15Px">Activities</h2>
     </div>
     <div>
-         <form method="get">
-    {{ filter.form.as_p }}
-    <button type="submit">Search</button>
-    <button onclick=location.href="{% url "volunnet:activity_list" %}" type="button">Clear</button></button>
-         </form>
         <style>
         table {
             background-color: palegreen;
@@ -48,7 +43,7 @@
             </tr>
             </thead>
             <tbody>
-            {% for activity in filter.qs %}
+           {% for activity in activities %}
                 <tr>
                     <td>{{ activity.title }}</td>
                     <td>{{ activity.description }}</td>
@@ -69,20 +64,22 @@
                                class="btn btn-primary">View list</a></td>
 
                     {% else %}
-                       <td><a href="{% url 'volunnet:apply' %}"
-                                    class="btn btn-primary">Apply</a></td>
+                        <td><a href="{% url 'volunnet:apply' %}"
+                               class="btn btn-primary">Apply</a></td>
                     {% endif %}
 
                 </tr>
             {% endfor %}
             </tbody>
         </table>
+
         {% if amIorg %}
             <div class="row">
                 <a href="{% url 'volunnet:activity_new' %}" class="row"><span
                         class="btn btn-primary">Add Activity</span></a>
-            </div>
+                </div>
         {% endif %}
+
         </div>
     </body>
 </html>
