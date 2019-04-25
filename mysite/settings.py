@@ -129,10 +129,9 @@ LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/home'
 
-
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'cvongtest1001@gmail.com'
 EMAIL_HOST_PASSWORD = 'Webapp2019'
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'TestSite Team <noreply@example.com>'
+DEFAULT_FROM_EMAIL = 'Volunteer Network <noreply@example.com>'
